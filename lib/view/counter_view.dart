@@ -51,6 +51,12 @@ class CounterView extends StatelessWidget {
                     },
                     child: const Icon(Icons.add),
                   ),
+                  ElevatedButton(
+                    onPressed: () {
+                      counterViewModel.reset();
+                    },
+                    child: const Text("Resetear"),
+                   ),
                 ],
               )
             ],
