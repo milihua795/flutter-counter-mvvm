@@ -17,4 +17,8 @@ class CounterViewmodel extends ChangeNotifier{
     model.count--;
     notifyListeners();
   }
+  void reset() {
+    model.count = 0;
+    notifyListeners();
+  }
 }
